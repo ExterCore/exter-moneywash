@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://use.fontawesome.com/e5864653ea.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>exter-money</title>
+</head>
+    <body>
+      <div class="create-prop-page">
+
+        <div class="top-box">
+          <div class="top-box-item">[W] Mode  Translate</div>
+          <div class="top-box-item">[R] Mode Rotate</div>
+          <div class="top-box-item" style="font-size: 40%;">[LALT] Place On Ground</div>
+          <div class="top-box-item">[ESC] Done Editing</div>
+        </div>
+    
+        <div class="discard-pop-up prop-popup">
+          <div class="header">Shopping</div>
+          <div class="alt">You need to build your furniture using the Shopping List, are you sure you want to leave?</div>
+          <div class="leave-button">Leave</div>
+          <div class="cancel-button">Cancel</div>
+        </div>
+    
+        <div class="save-pop-up prop-popup">
+          <div class="header">Shopping List</div>
+          <div class="alt">List of materials you need to complete furnishing</div>
+          <img src="../images/app.png" class="create-prop-img" alt="">
+          <div class="create-prop-name-box">Computer Desk</div>
+          <div class="amount-box">Amount you have</div>
+          <div class="req-count-box">1</div>
+          <div class="amount-count-box">1</div>
+          <div class="req-box">Amount Required</div>
+          <div class="save-build-button">Save/Build</div>
+          <div class="cancel-button">Cancel</div>
+          <div class="discard-button">Discard</div>
+        </div>
+    
+        <hr class="tophr">
+        <div class="colored"></div>
+    
+        <div class="mid-box">
+          <div class="mid-item prop-settings" data-type="save">Save</div>
+          <div class="mid-item">Undo</div>
+          <div class="mid-item">Rado</div>
+          <div class="mid-item prop-settings" data-type="discard">Discard</div>
+          <div class="mid-item">Shopping List</div>
+          <div class="mid-item">Settings</div>
+          <div class="mid-item prop-settings" data-type="delete">Delete</div>
+        </div>
+    
+        <div class="header">Furniture List</div>
+        <div class="alt">Objects you can place or have placed</div>
+        <input type="text" class="prop-search-input" placeholder="Search">
+        <i class="fa fa-search prop-search-icon" aria-hidden="true"></i>
+        <div class="hide-panel">
+          <div class="left-box"><</div>
+          <div class="left-box right"><</div>
+          <div class="panel-text">Hide Panel</div>
+        </div>
+        <div style="right: 3.5%;left: 94%;" class="hide-panel">
+          <div class="left-box">></div>
+          <div class="left-box right">></div>
+          <div class="panel-text" style="transform: rotate(-90deg);">Hide Panel</div>
+        </div>
+        <div class="edit-box">Edit</div>
+        <div class="edit-box placed">Placed</div>
+    
+    
+        <div class="prop-info-box">
+          <div class="prop-info-header">Item Information</div>
+          <div class="prop-info-alt">Selected item details</div>
+          <div class="model-hash-box">Model Hash</div>
+          <div class="model-hash hashbox">31071109</div>
+    
+          <div class="model-hash-box" style="top: 17%;bottom: 78%;">Prop Name</div>
+          <div class="model-hash propmodel"style="top: 17%;bottom: 78%;">prop_tool_bench</div>
+    
+          <div class="prop-header-2">Item Position</div>
+          <div class="prop-alt-2">Selected item Position and Rotation values</div>
+          <div class="prop-desc-box">
+            <div class="prop-desc-item">
+              <div class="desc-item-name">X position</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">Y position</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">Z position</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">X rotation</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">Y rotation</div>
+            </div>
+            <div class="prop-desc-item">
+              <div class="desc-item-name">Z rotation</div>
+            </div>
+          </div>
+    
+          <div class="prop-desc-alt-box">
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name posx">-647.92</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name posy">-1131.359</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name posz">50.982</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name rotx">0.0</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name roty">0.0</div>
+            </div>
+            <div class="prop-desc-item-alt">
+              <div class="desc-item-name rotz">132.5278</div>
+            </div>
+          </div>
+    
+          <div class="item-material-header">Item Material</div>
+          <div class="item-material-alt">Material used to place item</div>
+          <img src="../images/app.png" class="select-item-img" alt="">
+          <div class="select-item-name-box">Basic Crafting Bench</div>
+          <div class="material-placed">
+              <div class="material-placed-name">Material Placed</div>
+          </div>
+          <div class="material-placed-number">
+            <div class="material-placed-text">0</div>
+          </div>
+    
+          <div class="in-inventory-box">
+            <div class="in-inventory-text">In inventory</div>
+          </div>
+          <div class="in-inventory-count">
+            <div class="in-inventory-count-text">1</div>
+          </div>
+    
+    
+        </div>
+
+      <div class="prop-box">
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+        <div class="prop-item">
+          <img src="../images/folder.png" class="prop-img" alt="">
+          <div class="prop-item-name">Window Coverings</div>
+          <div class="right-box">></div>
+        </div>
+      </div>
+  
+      </div>
+
+      
+      <div class="washing-box">
+        <div class="alt-box">
+          <div class="header">Washing Machine</div>
+          <div class="header-alt">Keep track or year washing machines performance</div>
+          <div class="line"></div>
+          <div class="line2"></div>
+          <div class="money-header">Money Inside</div>
+          <div class="money-box">
+            <div class="money-alt">$</div>
+            <div class="money-alt">1</div>
+            <div class="money-alt">2</div>
+            <div class="money-alt">3</div>
+            <div class="money-alt">4</div>
+          </div>
+          <div class="alt-line"></div>
+          <div class="info-text">Info</div>
+          <div class="alt-line" style="left: 55%;"></div>
+
+          <div class="item-box">
+            <div class="item-header">Outcome</div>
+            <div id="hourly-money" class="item-alt">$5560 / h</div>
+  
+            <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <g clip-path="url(#clip0_4_65)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6663 4.66638C17.1083 4.66638 17.5322 4.84198 17.8448 5.15454C18.1573 5.4671 18.3329 5.89102 18.3329 6.33305V14.6664C18.3329 15.1084 18.1573 15.5323 17.8448 15.8449C17.5322 16.1575 17.1083 16.333 16.6663 16.333H3.33293C2.8909 16.333 2.46698 16.1575 2.15442 15.8449C1.84185 15.5323 1.66626 15.1084 1.66626 14.6664V6.33305C1.66626 5.89102 1.84185 5.4671 2.15442 5.15454C2.46698 4.84198 2.8909 4.66638 3.33293 4.66638H16.6663ZM3.43709 12.1664L3.33293 12.1689V13.8405C3.43641 13.8256 3.5419 13.8331 3.64223 13.8625C3.74256 13.8919 3.8354 13.9426 3.91444 14.011C3.99348 14.0795 4.05687 14.1641 4.10032 14.2592C4.14377 14.3543 4.16626 14.4577 4.16626 14.5622L4.16459 14.6147L4.15793 14.6664H5.82959L5.83293 14.5622C5.83293 13.9268 5.58051 13.3174 5.1312 12.8681C4.6819 12.4188 4.07251 12.1664 3.43709 12.1664ZM16.5621 12.1664C15.9511 12.1664 15.3631 12.3999 14.9185 12.819C14.474 13.2382 14.2063 13.8114 14.1704 14.4214L14.1663 14.5622C14.1663 14.5972 14.1663 14.6322 14.1688 14.6664H15.8404C15.8242 14.5542 15.8344 14.4397 15.8702 14.3321C15.906 14.2246 15.9664 14.1268 16.0465 14.0466C16.1267 13.9665 16.2244 13.9061 16.332 13.8703C16.4396 13.8346 16.554 13.8244 16.6663 13.8405V12.1689L16.5621 12.1664ZM9.99959 7.16638C9.11554 7.16638 8.26769 7.51757 7.64257 8.14269C7.01745 8.76781 6.66626 9.61566 6.66626 10.4997C6.66626 11.3838 7.01745 12.2316 7.64257 12.8567C8.26769 13.4819 9.11554 13.833 9.99959 13.833C10.8836 13.833 11.7315 13.4819 12.3566 12.8567C12.9817 12.2316 13.3329 11.3838 13.3329 10.4997C13.3329 9.61566 12.9817 8.76781 12.3566 8.14269C11.7315 7.51757 10.8836 7.16638 9.99959 7.16638ZM9.99959 8.83305C10.4416 8.83305 10.8655 9.00864 11.1781 9.3212C11.4907 9.63376 11.6663 10.0577 11.6663 10.4997C11.6663 10.9417 11.4907 11.3657 11.1781 11.6782C10.8655 11.9908 10.4416 12.1664 9.99959 12.1664C9.55757 12.1664 9.13364 11.9908 8.82108 11.6782C8.50852 11.3657 8.33293 10.9417 8.33293 10.4997C8.33293 10.0577 8.50852 9.63376 8.82108 9.3212C9.13364 9.00864 9.55757 8.83305 9.99959 8.83305ZM5.83293 6.33305H4.16626V6.43722C4.16626 6.54177 4.14377 6.64511 4.10032 6.74021C4.05687 6.83531 3.99348 6.91995 3.91444 6.9884C3.8354 7.05685 3.74256 7.1075 3.64223 7.13691C3.5419 7.16633 3.43641 7.17382 3.33293 7.15888V8.83055L3.43709 8.83305C3.75172 8.83305 4.06326 8.77108 4.35394 8.65068C4.64461 8.53027 4.90873 8.3538 5.1312 8.13133C5.35368 7.90885 5.53015 7.64474 5.65055 7.35406C5.77096 7.06339 5.83293 6.75184 5.83293 6.43722V6.33305ZM15.8404 6.33305H14.1688L14.1663 6.43722C14.1663 7.04825 14.3997 7.63618 14.8189 8.08076C15.2381 8.52534 15.8113 8.79296 16.4213 8.82888L16.6146 8.83221L16.6663 8.83055V7.15888C16.5628 7.17382 16.4573 7.16633 16.357 7.13691C16.2566 7.1075 16.1638 7.05685 16.0847 6.9884C16.0057 6.91995 15.9423 6.83531 15.8989 6.74021C15.8554 6.64511 15.8329 6.54177 15.8329 6.43722L15.8346 6.38471L15.8404 6.33305Z" fill="#2CE9BF"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_4_65">
+                  <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <svg class="svg" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.707107" y="28.2843" width="39" height="39" rx="0.5" transform="rotate(-45 0.707107 28.2843)" stroke="url(#paint0_radial_4_46)"/>
+              <defs>
+              <radialGradient id="paint0_radial_4_46" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.0917 67.3885) rotate(-135) scale(34.5)">
+              <stop stop-color="#2CE9BF"/>
+              <stop offset="1" stop-color="#2CE9BF" stop-opacity="0"/>
+              </radialGradient>
+              </defs>
+            </svg>
+
+          </div>
+
+          <div style="left: 55%;" class="item-box">
+            <div class="item-header">Next Update</div>
+            <div id="countdown" class="item-alt">9m 36s</div>
+  
+            <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+              <path d="M12.7589 3.00912C11.6172 2.34649 10.3203 1.99842 9.00024 2.00037C4.85799 2.00037 1.50024 5.35812 1.50024 9.50037C1.50024 13.6426 4.85799 17.0004 9.00024 17.0004C13.1425 17.0004 16.5002 13.6426 16.5002 9.50037C16.5002 8.14025 16.138 6.86412 15.505 5.76462" stroke="#2CE9BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11.9817 6.51892C11.9817 6.51892 10.7112 9.9108 10.1254 10.4965C9.84411 10.7779 9.46257 10.9359 9.06474 10.9359C8.6669 10.9359 8.28536 10.7779 8.00405 10.4965C7.72274 10.2152 7.5647 9.83369 7.5647 9.43586C7.5647 9.03802 7.72274 8.65648 8.00405 8.37517C8.5898 7.78942 11.9817 6.51892 11.9817 6.51892Z" fill="#2CE9BF" stroke="#2CE9BF" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+
+            <svg class="svg" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.707107" y="28.2843" width="39" height="39" rx="0.5" transform="rotate(-45 0.707107 28.2843)" stroke="url(#paint0_radial_4_46)"/>
+              <defs>
+              <radialGradient id="paint0_radial_4_46" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.0917 67.3885) rotate(-135) scale(34.5)">
+              <stop stop-color="#2CE9BF"/>
+              <stop offset="1" stop-color="#2CE9BF" stop-opacity="0"/>
+              </radialGradient>
+              </defs>
+            </svg>
+
+          </div>
+
+          <div style="left: 55%;top: 50%;" class="item-box">
+            <div class="item-header">Linked Machines</div>
+            <div id="machine-linkedCount" class="item-alt">1x</div>
+  
+            <svg class="item-icon" style="width: 70% !important; height: 70% !important;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+              <g clip-path="url(#clip0_4_56)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9631 18.8683C15.9649 18.5341 16.0325 18.2036 16.162 17.8955C16.2916 17.5875 16.4806 17.308 16.7181 17.073C16.9557 16.838 17.2373 16.6521 17.5467 16.5259C17.8561 16.3997 18.1874 16.3357 18.5215 16.3376L23.6104 16.3671C23.9483 16.363 24.2836 16.4262 24.5968 16.5532C24.91 16.6801 25.1948 16.8681 25.4345 17.1063C25.6742 17.3445 25.8641 17.628 25.993 17.9404C26.122 18.2527 26.1874 18.5877 26.1856 18.9256C26.1837 19.2635 26.1145 19.5977 25.982 19.9086C25.8496 20.2195 25.6566 20.5009 25.4142 20.7364C25.1718 20.9718 24.885 21.1567 24.5704 21.2801C24.2558 21.4035 23.9198 21.463 23.5819 21.4552L18.4927 21.4274C17.8179 21.4235 17.1723 21.1517 16.6979 20.6718C16.2235 20.1918 15.9592 19.5431 15.9631 18.8683ZM14.0679 16.393C14.5126 15.5998 15.1617 14.9403 15.9477 14.4831C16.7337 14.0259 17.6279 13.7877 18.5372 13.7933L23.6253 13.8218C24.9751 13.8295 26.2665 14.3731 27.2155 15.333C27.6854 15.8083 28.057 16.3715 28.3093 16.9904C28.5615 17.6094 28.6893 18.2719 28.6855 18.9403C28.6817 19.6086 28.5462 20.2697 28.2869 20.8857C28.0276 21.5017 27.6495 22.0606 27.1742 22.5305C26.6989 23.0003 26.1358 23.372 25.5168 23.6242C24.8979 23.8765 24.2353 24.0043 23.567 24.0005L18.4789 23.972C17.5932 23.9673 16.7241 23.7315 15.9575 23.2879C15.1908 22.8444 14.5533 22.2084 14.1078 21.4429C13.6623 20.6774 13.4242 19.8089 13.4173 18.9233C13.4103 18.0376 13.6345 17.1654 14.0679 16.393Z" fill="#2CE9BF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.34451 16.2789C8.34632 15.9447 8.41393 15.6142 8.54348 15.3061C8.67304 14.9981 8.862 14.7186 9.09958 14.4836C9.33716 14.2486 9.6187 14.0627 9.92813 13.9365C10.2376 13.8103 10.5688 13.7463 10.903 13.7482L15.9918 13.7777C16.3297 13.7736 16.665 13.8368 16.9782 13.9638C17.2914 14.0907 17.5762 14.2787 17.8159 14.5169C18.0556 14.7551 18.2455 15.0386 18.3745 15.351C18.5034 15.6633 18.5689 15.9983 18.567 16.3362C18.5651 16.6741 18.4959 17.0083 18.3635 17.3192C18.231 17.6301 18.038 17.9115 17.7956 18.147C17.5533 18.3824 17.2664 18.5673 16.9518 18.6907C16.6372 18.8141 16.3012 18.8736 15.9634 18.8658L10.8742 18.838C10.1994 18.8341 9.55374 18.5623 9.07934 18.0824C8.60494 17.6024 8.34061 16.9537 8.34451 16.2789ZM6.44936 13.8036C6.89402 13.0104 7.54313 12.3509 8.32914 11.8937C9.11515 11.4365 10.0093 11.1983 10.9186 11.2039L16.0057 11.2331C16.674 11.2368 17.335 11.3722 17.951 11.6314C18.567 11.8906 19.1259 12.2686 19.5958 12.7438C20.0657 13.219 20.4374 13.7822 20.6896 14.401C20.9419 15.0199 21.0698 15.6824 21.0661 16.3507C21.0623 17.019 20.927 17.68 20.6677 18.296C20.4085 18.912 20.0305 19.4709 19.5553 19.9408C19.0801 20.4107 18.517 20.7824 17.8981 21.0347C17.2792 21.2869 16.6167 21.4148 15.9484 21.4111L10.8603 21.3826C9.97462 21.3779 9.10551 21.1421 8.3389 20.6985C7.57229 20.255 6.93471 19.619 6.4892 18.8535C6.04369 18.088 5.80568 17.2195 5.7987 16.3339C5.79171 15.4482 6.01599 14.576 6.44936 13.8036Z" fill="#2CE9BF"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_4_56">
+                  <rect width="25.445" height="25.445" fill="white" transform="translate(22.0361) rotate(60)"/>
+                </clipPath>
+              </defs>
+            </svg>
+
+            <svg class="svg" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.707107" y="28.2843" width="39" height="39" rx="0.5" transform="rotate(-45 0.707107 28.2843)" stroke="url(#paint0_radial_4_46)"/>
+              <defs>
+              <radialGradient id="paint0_radial_4_46" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.0917 67.3885) rotate(-135) scale(34.5)">
+              <stop stop-color="#2CE9BF"/>
+              <stop offset="1" stop-color="#2CE9BF" stop-opacity="0"/>
+              </radialGradient>
+              </defs>
+            </svg>
+
+          </div>
+
+          <div style="left: 8%;top: 50%;" class="item-box">
+            <div class="item-header">Machines</div>
+            <div id="machine-count" class="item-alt">1x</div>
+
+            <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M12.3583 9.30829C12.9821 9.9346 13.3324 10.7826 13.3324 11.6666C13.3324 12.5506 12.9821 13.3987 12.3583 14.025C11.7319 14.6488 10.8839 14.9991 9.99992 14.9991C9.1159 14.9991 8.26789 14.6488 7.64159 14.025L12.3583 9.30829ZM4.99992 1.66663H14.9999C15.4419 1.66663 15.8659 1.84222 16.1784 2.15478C16.491 2.46734 16.6666 2.89127 16.6666 3.33329V16.6666C16.6666 17.1087 16.491 17.5326 16.1784 17.8451C15.8659 18.1577 15.4419 18.3333 14.9999 18.3333H4.99992C4.55789 18.3333 4.13397 18.1577 3.82141 17.8451C3.50885 17.5326 3.33325 17.1087 3.33325 16.6666V3.33329C3.33325 2.89127 3.50885 2.46734 3.82141 2.15478C4.13397 1.84222 4.55789 1.66663 4.99992 1.66663ZM5.83325 3.33329C5.61224 3.33329 5.40028 3.42109 5.244 3.57737C5.08772 3.73365 4.99992 3.94561 4.99992 4.16663C4.99992 4.38764 5.08772 4.5996 5.244 4.75588C5.40028 4.91216 5.61224 4.99996 5.83325 4.99996C6.05427 4.99996 6.26623 4.91216 6.42251 4.75588C6.57879 4.5996 6.66659 4.38764 6.66659 4.16663C6.66659 3.94561 6.57879 3.73365 6.42251 3.57737C6.26623 3.42109 6.05427 3.33329 5.83325 3.33329ZM8.33325 3.33329C8.11224 3.33329 7.90028 3.42109 7.744 3.57737C7.58772 3.73365 7.49992 3.94561 7.49992 4.16663C7.49992 4.38764 7.58772 4.5996 7.744 4.75588C7.90028 4.91216 8.11224 4.99996 8.33325 4.99996C8.55427 4.99996 8.76623 4.91216 8.92251 4.75588C9.07879 4.5996 9.16658 4.38764 9.16658 4.16663C9.16658 3.94561 9.07879 3.73365 8.92251 3.57737C8.76623 3.42109 8.55427 3.33329 8.33325 3.33329ZM9.99992 6.66663C8.67384 6.66663 7.40207 7.19341 6.46438 8.13109C5.5267 9.06877 4.99992 10.3405 4.99992 11.6666C4.99992 12.9927 5.5267 14.2645 6.46438 15.2022C7.40207 16.1398 8.67384 16.6666 9.99992 16.6666C11.326 16.6666 12.5978 16.1398 13.5355 15.2022C14.4731 14.2645 14.9999 12.9927 14.9999 11.6666C14.9999 10.3405 14.4731 9.06877 13.5355 8.13109C12.5978 7.19341 11.326 6.66663 9.99992 6.66663Z" fill="#2CE9BF"/>
+            </svg>
+
+            <svg class="svg" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.707107" y="28.2843" width="39" height="39" rx="0.5" transform="rotate(-45 0.707107 28.2843)" stroke="url(#paint0_radial_4_46)"/>
+              <defs>
+              <radialGradient id="paint0_radial_4_46" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.0917 67.3885) rotate(-135) scale(34.5)">
+              <stop stop-color="#2CE9BF"/>
+              <stop offset="1" stop-color="#2CE9BF" stop-opacity="0"/>
+              </radialGradient>
+              </defs>
+            </svg>
+
+          </div>
+
+          <div class="alt-line" style="top: 46%;width: 36%;"></div>
+          <div class="alt-line" style="top: 46%;left: 57%;width: 36%;"></div>
+          <div class="info-text" style="top: 36%;left: 4%;">Setup</div>
+
+          <div class="alt-line" style="top: 61%;width: 33%;"></div>
+          <div class="alt-line" style="top: 61%;left: 63%;width: 33%;"></div>
+          <div class="info-text" style="top: 51%;">Performance</div>
+
+          <svg class="performance-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <g clip-path="url(#clip0_4_78)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.68673 0.962873C1.68673 0.749753 1.60207 0.545361 1.45137 0.394662C1.30067 0.243963 1.09628 0.159302 0.883161 0.159302C0.670041 0.159302 0.465649 0.243963 0.31495 0.394662C0.164252 0.545361 0.0795898 0.749753 0.0795898 0.962873V14.0386C0.0795898 14.4822 0.43959 14.8422 0.883161 14.8422H13.9589C14.172 14.8422 14.3764 14.7575 14.5271 14.6068C14.6778 14.4561 14.7624 14.2517 14.7624 14.0386C14.7624 13.8255 14.6778 13.6211 14.5271 13.4704C14.3764 13.3197 14.172 13.235 13.9589 13.235H1.68566L1.68673 0.962873Z" fill="#00F8BC"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.951 2.60607C10.8341 2.5227 10.7016 2.46368 10.5615 2.43252C10.4213 2.40135 10.2763 2.39869 10.135 2.42467C9.99382 2.45066 9.85926 2.50477 9.73936 2.58378C9.61946 2.6628 9.51667 2.76511 9.43709 2.88464L6.13924 7.83036L4.54924 6.24036C4.44969 6.14074 4.3315 6.0617 4.20141 6.00777C4.07131 5.95383 3.93187 5.92604 3.79104 5.92599C3.65021 5.92594 3.51075 5.95363 3.38062 6.00748C3.25049 6.06132 3.13225 6.14027 3.03263 6.23982C2.93301 6.33937 2.85398 6.45756 2.80004 6.58765C2.7461 6.71774 2.71831 6.85718 2.71826 6.99801C2.71821 7.13884 2.7459 7.2783 2.79975 7.40843C2.8536 7.53856 2.93255 7.65681 3.03209 7.75643L5.54674 10.27C5.6588 10.3823 5.7944 10.4683 5.94374 10.5218C6.09308 10.5753 6.25244 10.5949 6.41031 10.5793C6.56817 10.5638 6.72061 10.5133 6.85661 10.4317C6.99261 10.35 7.10878 10.2392 7.19674 10.1071L10.6049 4.99321L13.2257 6.865C13.457 7.0301 13.7444 7.09654 14.0247 7.04973C14.305 7.00291 14.5552 6.84666 14.7203 6.61536C14.8854 6.38405 14.9519 6.09663 14.905 5.81633C14.8582 5.53603 14.702 5.28581 14.4707 5.12071L10.951 2.60607Z" fill="#00F8BC"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_4_78">
+                <rect width="15" height="15" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+
+          <div class="performance-box">
+            <div class="performance-progress"></div>
+          </div>
+
+          <svg class="performance-icon" style="left: 84%;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <g clip-path="url(#clip0_4_78)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.68673 0.962873C1.68673 0.749753 1.60207 0.545361 1.45137 0.394662C1.30067 0.243963 1.09628 0.159302 0.883161 0.159302C0.670041 0.159302 0.465649 0.243963 0.31495 0.394662C0.164252 0.545361 0.0795898 0.749753 0.0795898 0.962873V14.0386C0.0795898 14.4822 0.43959 14.8422 0.883161 14.8422H13.9589C14.172 14.8422 14.3764 14.7575 14.5271 14.6068C14.6778 14.4561 14.7624 14.2517 14.7624 14.0386C14.7624 13.8255 14.6778 13.6211 14.5271 13.4704C14.3764 13.3197 14.172 13.235 13.9589 13.235H1.68566L1.68673 0.962873Z" fill="#00F8BC"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.951 2.60607C10.8341 2.5227 10.7016 2.46368 10.5615 2.43252C10.4213 2.40135 10.2763 2.39869 10.135 2.42467C9.99382 2.45066 9.85926 2.50477 9.73936 2.58378C9.61946 2.6628 9.51667 2.76511 9.43709 2.88464L6.13924 7.83036L4.54924 6.24036C4.44969 6.14074 4.3315 6.0617 4.20141 6.00777C4.07131 5.95383 3.93187 5.92604 3.79104 5.92599C3.65021 5.92594 3.51075 5.95363 3.38062 6.00748C3.25049 6.06132 3.13225 6.14027 3.03263 6.23982C2.93301 6.33937 2.85398 6.45756 2.80004 6.58765C2.7461 6.71774 2.71831 6.85718 2.71826 6.99801C2.71821 7.13884 2.7459 7.2783 2.79975 7.40843C2.8536 7.53856 2.93255 7.65681 3.03209 7.75643L5.54674 10.27C5.6588 10.3823 5.7944 10.4683 5.94374 10.5218C6.09308 10.5753 6.25244 10.5949 6.41031 10.5793C6.56817 10.5638 6.72061 10.5133 6.85661 10.4317C6.99261 10.35 7.10878 10.2392 7.19674 10.1071L10.6049 4.99321L13.2257 6.865C13.457 7.0301 13.7444 7.09654 14.0247 7.04973C14.305 7.00291 14.5552 6.84666 14.7203 6.61536C14.8854 6.38405 14.9519 6.09663 14.905 5.81633C14.8582 5.53603 14.702 5.28581 14.4707 5.12071L10.951 2.60607Z" fill="#00F8BC"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_4_78">
+                <rect width="15" height="15" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+
+          <div class="alt-line" style="top: 71%;width: 33%;"></div>
+          <div class="alt-line" style="top: 71%;left: 63%;width: 33%;"></div>
+          <div class="info-text" style="top: 61%;">Summary</div>
+
+          <div class="summary-box"></div>
+          <div class="summary-text">Cooling</div>
+
+          <div class="summary-box" style="left: 36%;background-color: #EB6260;"></div>
+          <div class="summary-text" style="left: 50%;">Heating</div>
+
+          <div class="summary-box" style="left: 62%;background-color: #5DEF38;"></div>
+          <div class="summary-text" style="left: 76%;">Performance</div>
+
+          <svg class="graph" xmlns="http://www.w3.org/2000/svg" width="365" height="128" viewBox="0 0 365 128" fill="none">
+            <path d="M7 0H8V128H7V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M44 0H45V128H44V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M0 0H364V1H0V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M0 18H364V19H0V18Z" fill="white" fill-opacity="0.04"/>
+            <path d="M0 36H364V37H0V36Z" fill="white" fill-opacity="0.04"/>
+            <path d="M0 54H364V55H0V54Z" fill="white" fill-opacity="0.04"/>
+            <path d="M0 72H364V73H0V72Z" fill="white" fill-opacity="0.04"/>
+            <path d="M0 90H364V91H0V90Z" fill="white" fill-opacity="0.04"/>
+            <path d="M0 108H364V109H0V108Z" fill="white" fill-opacity="0.04"/>
+            <path d="M0 126H364V127H0V126Z" fill="white" fill-opacity="0.04"/>
+            <path d="M79.5 0H80.5V128H79.5V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M115 0H116V128H115V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M150.5 0H151.5V128H150.5V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M186 0H187V128H186V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M221.5 0H222.5V128H221.5V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M257 0H258V128H257V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M292.5 0H293.5V128H292.5V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M328 0H329V128H328V0Z" fill="white" fill-opacity="0.04"/>
+            <path d="M363.5 0H364.5V128H363.5V0Z" fill="white" fill-opacity="0.04"/>
+          </svg>
+          
+          <div class="number-box">
+            <div class="numbers">350</div>
+            <div class="numbers">300</div>
+            <div class="numbers">250</div>
+            <div class="numbers">200</div>
+            <div class="numbers">150</div>
+            <div class="numbers">100</div>
+            <div class="numbers">50</div>
+            <div class="numbers">0</div>
+          </div>
+
+          <div class="alt-number-box">
+            <div class="numbers">1</div>
+            <div class="numbers">2</div>
+            <div class="numbers">3</div>
+            <div class="numbers">4</div>
+            <div class="numbers">5</div>
+            <div class="numbers">6</div>
+            <div class="numbers">7</div>
+            <div class="numbers">8</div>
+            <div class="numbers">9</div>
+            <div class="numbers">10</div>
+          </div>
+
+          <div class="summary-statsbox">
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-cool"></div>
+              <div class="stats-heating"></div>
+              <div class="stats-performance"></div>
+            </div>
+    
+           
+          </div>
+
+        </div>
+      </div>
+
+      <div class="control-box">
+
+        <div class="control-alt-box">
+          <!-- <div id="div1" class="box"></div>
+          <div id="div2" class="box"></div> -->
+          <canvas id="lineCanvas"></canvas>
+          
+          <img class="dot" src="../images/dot.png" alt="">
+          <div class="top-hr"></div>
+          <div class="green-hr"></div>
+          <div class="header">Control Panel</div>
+          <div class="header-desc">Link your washing machines to a laundry basket</div>
+          <div class="save-button">Save</div>
+        <div id="machine-box" class="machine-box">
+          <div  class="machine-basket">
+            <div id="divbasket" class="machine-basket-dot"></div>
+            <div class="machine-basket-name">Basket <span style="color: #E1BD41;">#1</span></div>
+          </div>
+
+          <div class="machine-item" draggable="true">
+            <div class="machine-name">Machine <span style="color: #00F7BE;">#1</span></div>
+            <div id="div3"  class="machine-dot"></div>
+          </div>
+          <div class="machine-item" draggable="true">
+            <div class="machine-name">Machine <span style="color: #00F7BE;">#2</span></div>
+            <div id="div4" class="machine-dot"></div>
+          </div>
+          <div class="machine-item" draggable="true">
+            <div class="machine-name">Machine <span style="color: #00F7BE;">#3</span></div>
+            <div id="div5" class="machine-dot"></div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+    </body>
+</html>
+
+<script src="./script.js" type="text/javascript"></script>
+
