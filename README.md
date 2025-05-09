@@ -211,6 +211,7 @@ Config = {
 
 - QBCore Framework
 - interact system [darktrovx](https://github.com/darktrovx/interact)
+- plcement object system [object_gizmo](https://github.com/DemiAutomatic/object_gizmo)
 - Notification system (default QBCore or custom)
 
 ---
